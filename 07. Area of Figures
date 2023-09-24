@@ -1,0 +1,21 @@
+function demo(input){
+    let figure = input[0];
+    let area = 0;
+    switch(figure){
+        case"square":
+        area = Number(input[1]) * Number(input[1]); 
+        break;
+        case"rectangle":
+        area = Number(input[1]) * Number(input[2]);
+        break;
+        case"circle":
+        area = Math.PI * Number(input[1]) * Number(input[1]);
+        break;
+        case"triangle":
+        area = Number(input[1]) * Number(input[2]) / 2;
+        break;
+        default:
+        break;
+    }
+    console.log(area.toFixed(3));
+}
